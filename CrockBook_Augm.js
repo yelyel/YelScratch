@@ -17,14 +17,6 @@ document.writeln((-10 / 3).integer(  ));  // -3
 
 Object.method('makeInt', function( ) {
   
-/*   if (this.typeof !== 'number')  {
-     
-     return("keine nuemmerlein");
-   }else
-     {
-       return("nuemmerlein");
-     }
-*/  
   return this.typeof !== Number ? parseInt(this) * 3 : "nuemmerlein";
      
 });
