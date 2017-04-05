@@ -2,37 +2,28 @@
 // Scope
 //====================================
 
-var foo = function (  ) {
+var foo = function( ) {
+    
     var a = 3, b = 5;
 
     var bar = function (  ) {
+        
         var b = 7, c = 11;
-
-// At this point, a is 3, b is 7, and c is 11
-
-        a += b + c;
-     return(document.writeln(this.a));
-// At this point, a is 21, b is 7, and c is 11
-
+        
+        console.log(a, b, c);  // 3, 7, 11
+        
+        a += b + c;  // a = 21
+        return a;
     };
 
-// At this point, a is 3, b is 5, and c is not defined
-
-    bar(  );
-          
-
-
-// At this point, a is 21, b is 5
+    console.log(bar()); // 21
+    console.log(b); // 5, c ist nicht definiert.
     
-foo();
+    return [a, b]
+};        
     
-
-      
-       document.writeln(b);
-       //document.writeln(c);    
-};
-    
-document.writeln("who am You");
-
+console.log(foo());  // a = 21, b = 5
+console.log('who am You? yeL?');    
 
 ////Wie gott verdammt noch mal kann ich hier deie Werte ausschreiben ????
+// Weil Du es falsch gemacht hast.
