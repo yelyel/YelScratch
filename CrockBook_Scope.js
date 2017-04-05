@@ -26,4 +26,4 @@ console.log(foo());  // a = 21, b = 5
 console.log('who am You? yeL?');    
 
 ////Wie gott verdammt noch mal kann ich hier deie Werte ausschreiben ????
-// Weil Du es falsch gemacht hast.
+/// Du musst es nur richtig machen...
