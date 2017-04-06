@@ -30,11 +30,14 @@ console.log((-10 / 3).integer()); // 3
 
 Object.method('makeInt', function() {
     
-    return typeof this.a === 'number' ? this.a : 'nuemmerlein'; 
+    //return typeof this.a === 'number' ? this.a : parseInt(this.a);  // return A
+    return typeof this === 'number' ? this : parseInt(this);  // return B
 });
 
-console.log({}.makeInt());     // nuemmerlein
-console.log({a:42}.makeInt()); // 42
+console.log({a:"4.1"}.makeInt() * 3);     // 12 --> läuft mit return A
+console.log({a:42}.makeInt()); // 42 --> läuft mit return A
+
+console.log(Object("4.3").makeInt() * 3);  // 12  --> --> läuft mit return B
+console.log(Object(45).makeInt());  // 45  --> läuft mit return B
 
 
-//wieso gibt er nicht "nuemmerlein" aus, wenn ich eine Zahl mitgebe ??
