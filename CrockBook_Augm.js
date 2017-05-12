@@ -24,7 +24,7 @@ console.log(Number(-2.9).integer());  // -2
 console.log(Number(2.9).integer());   //  2
 console.log(typeof (-10 / 3)  === 'number'); // true
 console.log((-10 / 3).integer()); // 3
-console.log('Stefan ist da');
+console.log('Stefan ist nicht mehr da');
 
 
 // Weiteres Beispiel:
